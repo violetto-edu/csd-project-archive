@@ -15,10 +15,11 @@ export function initDarkMode() {
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const isDark = savedMode !== null ? savedMode : prefersDark;
 
-  // Apply initial theme
-  if (isDark) {
+  // Apply initial theme (only if not already set by inline script)
+  const currentlyDark = html.classList.contains("dark");
+  if (isDark && !currentlyDark) {
     html.classList.add("dark");
-  } else {
+  } else if (!isDark && currentlyDark) {
     html.classList.remove("dark");
   }
 

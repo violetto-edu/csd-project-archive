@@ -18,6 +18,23 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
       rel="stylesheet"
     />
+    <script>
+      // Apply dark mode immediately before page renders to prevent flash
+      (function () {
+        try {
+          const saved = localStorage.getItem("darkMode");
+          const isDark =
+            saved !== null
+              ? saved === "true" || saved === true
+              : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (isDark) {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {
+          // Ignore errors
+        }
+      })();
+    </script>
   </head>
   <body
     class="flex h-screen flex-col overflow-hidden md:flex-row"
@@ -80,7 +97,7 @@
       <nav class="flex-1 space-y-1 overflow-y-auto p-2">
         <a
           href="{{ '/' | relative_url }}"
-          class="nav-link {% if page.url == '/' %}nav-link-active font-bold{% endif %} block flex touch-manipulation items-center gap-2 p-3"
+          class="nav-link {% if page.url == '/' %}nav-link-active font-bold{% endif %} flex touch-manipulation items-center gap-2 p-3"
           onclick="closeMobileSidebar()"
         >
           <span
@@ -117,7 +134,7 @@
             sort: 'slug' %} {% for batch in year_batches %}
             <a
               href="{{ batch.url | relative_url }}"
-              class="nav-link {% if page.url == batch.url %}nav-link-active font-bold{% endif %} block flex touch-manipulation items-center gap-2 p-3"
+              class="nav-link {% if page.url == batch.url %}nav-link-active font-bold{% endif %} flex touch-manipulation items-center gap-2 p-3"
               title="{{ batch.title }}"
               onclick="closeMobileSidebar()"
             >

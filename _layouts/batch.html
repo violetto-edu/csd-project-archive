@@ -24,7 +24,7 @@ layout: default
   </div>
 </header>
 
-<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+<div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:items-stretch">
   <!-- Journal Section -->
   <div class="archive-card">
     <div
@@ -35,8 +35,10 @@ layout: default
       </h2>
       <span class="badge-secondary rounded-full px-2 py-1 text-xs">PDF</span>
     </div>
-    <div class="border-var-secondary card-content mb-4 border p-4">
-      <p class="text-var-secondary mb-2 text-sm">
+    <div
+      class="border-var-secondary card-content mb-4 flex flex-col border p-4"
+    >
+      <p class="text-var-secondary mb-2 flex-1 text-sm">
         Weekly progress logs and documentation.
       </p>
       {% if page.journal_link and page.journal_link != '' %}
@@ -67,8 +69,10 @@ layout: default
       </h2>
       <span class="badge-secondary rounded-full px-2 py-1 text-xs">SLIDES</span>
     </div>
-    <div class="border-var-secondary card-content mb-4 border p-4">
-      <p class="text-var-secondary mb-2 text-sm">
+    <div
+      class="border-var-secondary card-content mb-4 flex flex-col border p-4"
+    >
+      <p class="text-var-secondary mb-2 flex-1 text-sm">
         Project presentation slides (PPT/PDF).
       </p>
       {% if page.ppt_link and page.ppt_link != '' %}
@@ -100,8 +104,10 @@ layout: default
       </h2>
       <span class="badge-secondary rounded-full px-2 py-1 text-xs">LINK</span>
     </div>
-    <div class="border-var-secondary card-content mb-4 border p-4">
-      <p class="text-var-secondary mb-2 text-sm">
+    <div
+      class="border-var-secondary card-content mb-4 flex flex-col border p-4"
+    >
+      <p class="text-var-secondary mb-2 flex-1 text-sm">
         Repository, source code archive, or deployment/live link.
       </p>
       {% if page.code_link and page.code_link != '' %}
@@ -133,8 +139,10 @@ layout: default
       </h2>
       <span class="badge-secondary rounded-full px-2 py-1 text-xs">PDF</span>
     </div>
-    <div class="border-var-secondary card-content mb-4 border p-4">
-      <p class="text-var-secondary mb-2 text-sm">
+    <div
+      class="border-var-secondary card-content mb-4 flex flex-col border p-4"
+    >
+      <p class="text-var-secondary mb-2 flex-1 text-sm">
         Final project reports and analysis.
       </p>
       {% if page.report_link and page.report_link != '' %}
