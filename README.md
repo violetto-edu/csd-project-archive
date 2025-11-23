@@ -88,7 +88,7 @@ The script will automatically:
 **Reminder:** Before committing your changes, make sure to build the latest CSS:
 
 ```bash
-npm run build:css
+npm run precommit
 ```
 
 This ensures your production CSS is updated and committed.

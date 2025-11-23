@@ -20,13 +20,27 @@
     />
     <script>
       // Apply dark mode immediately before page renders to prevent flash
+      // Uses same logic as getLocalStorage utility to ensure consistency
       (function () {
         try {
           const saved = localStorage.getItem("darkMode");
-          const isDark =
-            saved !== null
-              ? saved === "true" || saved === true
-              : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          let isDark;
+          if (saved === null) {
+            isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          } else if (saved === "true") {
+            isDark = true;
+          } else if (saved === "false") {
+            isDark = false;
+          } else {
+            // Try to parse as JSON (for values stored via JSON.stringify)
+            try {
+              isDark = JSON.parse(saved);
+            } catch {
+              isDark = window.matchMedia(
+                "(prefers-color-scheme: dark)"
+              ).matches;
+            }
+          }
           if (isDark) {
             document.documentElement.classList.add("dark");
           }

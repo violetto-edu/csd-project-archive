@@ -179,6 +179,7 @@
 
   .year-number-collapsed {
     @apply w-0 overflow-hidden opacity-0;
+    display: none;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -186,6 +187,7 @@
 
   .sidebar.sidebar-collapsed .year-number-collapsed {
     @apply w-auto overflow-visible opacity-100;
+    display: block;
   }
 
   /* Project card content areas */
