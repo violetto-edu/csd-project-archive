@@ -8,7 +8,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "update:batches": "node scripts/update-batches.js",
-    "deploy": "npm run update:batches && npm run build:css && npm run format"
+    "precommit": "npm run update:batches && npm run build:css && npm run format"
   },
   "devDependencies": {
     "csv-parse": "^6.1.0",

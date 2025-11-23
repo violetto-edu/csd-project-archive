@@ -1,13 +1,13 @@
 ---
-title: CuraPath - AI driven personalized treatment plans
-slug: batch-09
-year: 2022
-permalink: /2022/batch-09/
-description: CuraPath - AI driven personalized treatment plans
-journal_link: https://docs.google.com/document/d/1iIHb2wEhu5NIWEbdcfn2z2lCW2Zz9edC/edit?usp=sharing&ouid=109045310811880153448&rtpof=true&sd=true
-ppt_link: https://docs.google.com/presentation/d/1JPMMkel_0CF6aWNkHGuvGWC6mFY17UcC/edit?usp=sharing&ouid=109045310811880153448&rtpof=true&sd=true
-code_link:
-report_link: https://docs.google.com/document/d/1AFdNjAXFUv7fkcRA54aYPH3SVN9w8Vxn/edit?usp=sharing&ouid=109045310811880153448&rtpof=true&sd=true
+title: "Batch 07"
+slug: "batch-09"
+year: "2022"
+permalink: "/2022/batch-09/"
+description: "CuraPath - AI driven personalized treatment plans"
+journal_link: "https://docs.google.com/document/d/1iIHb2wEhu5NIWEbdcfn2z2lCW2Zz9edC/edit?usp=sharing&ouid=109045310811880153448&rtpof=true&sd=true"
+ppt_link: "https://docs.google.com/presentation/d/1JPMMkel_0CF6aWNkHGuvGWC6mFY17UcC/edit?usp=sharing&ouid=109045310811880153448&rtpof=true&sd=true"
+code_link: ""
+report_link: "https://docs.google.com/document/d/1AFdNjAXFUv7fkcRA54aYPH3SVN9w8Vxn/edit?usp=sharing&ouid=109045310811880153448&rtpof=true&sd=true"
 ---
 
 ### Project Abstract

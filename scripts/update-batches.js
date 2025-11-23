@@ -139,12 +139,13 @@ function parseFrontMatter(content) {
  */
 function generateFrontMatter(frontMatter) {
   const lines = Object.entries(frontMatter).map(([key, value]) => {
-    // Escape quotes in values
-    const escapedValue =
-      typeof value === "string" && value.includes('"')
-        ? `"${value.replace(/"/g, '\\"')}"`
-        : value;
-    return `${key}: ${escapedValue}`;
+    // Quote all string values (especially URLs and descriptions)
+    if (typeof value === "string") {
+      // Escape quotes in values
+      const escapedValue = value.replace(/"/g, '\\"');
+      return `${key}: "${escapedValue}"`;
+    }
+    return `${key}: ${value}`;
   });
   return `---\n${lines.join("\n")}\n---\n`;
 }
@@ -164,9 +165,6 @@ function updateBatchFile(batchSlug, data) {
   const { frontMatter, body } = parseFrontMatter(content);
 
   // Update front matter fields
-  if (data.title) {
-    frontMatter.title = data.title;
-  }
   if (data.description !== undefined) {
     frontMatter.description = data.description || "";
   }
