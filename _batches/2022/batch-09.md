@@ -1,5 +1,5 @@
 ---
-title: "Batch 07"
+title: "Batch 09"
 slug: "batch-09"
 year: "2022"
 permalink: "/2022/batch-09/"
