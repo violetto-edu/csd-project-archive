@@ -4,10 +4,10 @@ slug: "batch-09"
 year: "2022"
 permalink: "/2022/batch-09/"
 description: "CuraPath - AI driven personalized treatment plans"
-journal_link: "https://docs.google.com/document/d/1iIHb2wEhu5NIWEbdcfn2z2lCW2Zz9edC/edit?usp=sharing&ouid=109045310811880153448&rtpof=true&sd=true"
+journal_link: "https://drive.google.com/file/d/1TbZS6py5ViVMsJN_pZ7QMt913khAnLLj/view?usp=sharing"
 ppt_link: "https://docs.google.com/presentation/d/1JPMMkel_0CF6aWNkHGuvGWC6mFY17UcC/edit?usp=sharing&ouid=109045310811880153448&rtpof=true&sd=true"
-code_link: ""
-report_link: "https://docs.google.com/document/d/1AFdNjAXFUv7fkcRA54aYPH3SVN9w8Vxn/edit?usp=sharing&ouid=109045310811880153448&rtpof=true&sd=true"
+code_link: "https://github.com/thoofik/CuraPath-2"
+report_link: "https://drive.google.com/file/d/1SongKzI86PDeLq6PKe0YPLyNHwwoIP9x/view?usp=sharing"
 ---
 
 ### Project Abstract

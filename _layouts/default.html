@@ -124,10 +124,10 @@
           class="border-var-secondary sidebar-text my-2 border-t border-dashed"
         ></div>
 
-        {% assign sorted_batches = site.batches | sort: 'year' | reverse %}
-        {% assign years_grouped = sorted_batches | group_by: 'year' %}
-        {% for year_group in years_grouped %}
-          {% assign year = year_group.name | plus: 0 %}
+        {% assign sorted_batches = site.batches | sort: 'year' | reverse %} {%
+        assign years_grouped = sorted_batches | group_by: 'year' %} {% for
+        year_group in years_grouped %} {% assign year = year_group.name | plus:
+        0 %}
         <div class="sidebar-year-group">
           <button
             class="year-toggle hover-bg-var relative mb-1 mt-2 flex w-full touch-manipulation items-center justify-between rounded px-2 py-1 text-xs uppercase"
@@ -145,8 +145,8 @@
             <span class="year-number-collapsed">{{ year }}</span>
           </button>
           <div class="year-batches" data-year="{{ year }}">
-            {% assign year_batches = year_group.items | sort: 'slug' %}
-            {% for batch in year_batches %}
+            {% assign year_batches = year_group.items | sort: 'slug' %} {% for
+            batch in year_batches %}
             <a
               href="{{ batch.url | relative_url }}"
               class="nav-link {% if page.url == batch.url %}nav-link-active font-bold{% endif %} flex touch-manipulation items-center gap-2 p-3"
