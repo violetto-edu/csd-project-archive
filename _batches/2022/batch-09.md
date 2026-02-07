@@ -14,6 +14,10 @@ report_link: "https://drive.google.com/file/d/1SongKzI86PDeLq6PKe0YPLyNHwwoIP9x/
 
 CuraPath is an AI-powered healthcare platform that offers personalized treatment plans through secure data management, multi-portal access, and an NLP-based symptom checker that provides real-time text and voice health insights. It streamlines patient–doctor coordination, automates administrative tasks, and ensures reliable performance through testing focused on accuracy, security, and usability.
 
+### Project Abstract
+
+CuraPath is an AI-powered healthcare platform that offers personalized treatment plans through secure data management, multi-portal access, and an NLP-based symptom checker that provides real-time text and voice health insights. It streamlines patient–doctor coordination, automates administrative tasks, and ensures reliable performance through testing focused on accuracy, security, and usability.
+
 ### Team Members
 
 - Prerana Ashok Raiker (4PM22CG034)
